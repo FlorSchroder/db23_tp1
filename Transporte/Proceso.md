@@ -16,22 +16,23 @@ De cada **viaje** que se realiza se registra la ruta, la hora de partida, el o l
 - Los choferes transporaan y entregan la entraga realizando **viajes** por **rutas** pre establecidas. Pueden requerirse varios choferes por ruta.
 - Cada ruta es una secuencia de localidades en cierto orden.
 - Cada ruta tiene un duracion (atributo).
-- ==Definimos que un viaje puede tener una sola ruta y una ruta puede constituir un solo viaje ?==
-- ==Es una empresa de transporte pero que transporta== 
-- ==Hace faalta una entidad pedido?==
+- ==Definimos que un viaje puede tener una sola ruta y una ruta puede constituir un solo viaje ?== NO, LO DICE EL ENUNCIADO
+- ==Es una empresa de transporte pero que transporta== SILLAS
+- ==Hace faalta una entidad pedido?== NO LO TENDREMOS EN CONSIDERACION
 
 
 ### 1. Analizar el enunciado detectando los sustantivos y sus interrelaciones, los sustantivos son candidatos a entidades
 - Sustantivos Candidatos:
   - Empresa de Transporte NOT
   - Rutas de Entrega (duracion) OK
-  - Localidades OK
+  - Localidades NOT
   - Cliente OK
   - Camion o vehiculo (marca,modelo,año,marca,carga maxima) OK
   - Choferes OK
-  - Viaje OK
+  - Viaje  OK
+  - Entregas OK
 - Supuestos:
-  - Cada viaje hace uso de unaa sola ruta
+  - Cada viaje hace uso de una sola ruta
 - Entidades Elegidas
   - E1: Viaje
   - E2: Ruta
@@ -39,6 +40,7 @@ De cada **viaje** que se realiza se registra la ruta, la hora de partida, el o l
     - E4: Vehiculo
     - E5: Localidad
     - E6: Cliente
+    - E7: Entrega
   
 ### 2. Formar la matriz de entidades
 
